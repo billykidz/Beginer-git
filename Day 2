@@ -29,10 +29,10 @@
 	$ sudo apt-get update
 	$ sudo apt-get install sublime-text-installer
 --Git
-    $ sudo apt-get update
-    $ sudo apt-get install git
-    $ git config --global user.name "Your Name"
-    $ git config --global user.email "youremail@domain.com"
+    	$ sudo apt-get update
+    	$ sudo apt-get install git
+    	$ git config --global user.name "Your Name"
+    	$ git config --global user.email "youremail@domain.com"
 --Vim
 	$ sudo apt-get install vim
 
