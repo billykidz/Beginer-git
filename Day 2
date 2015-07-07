@@ -1,4 +1,4 @@
----Các lệnh thông dụng trên Linux-----
+---Các lệnh thông dụng trên Linux
 	rmdir       xóa thư mục rổng
 	rm -rf    	xóa thư mục không rỗng.
 	mv          đổi tên/di chuyển thư mục hoặc file từ nơi này sang nơi khác
