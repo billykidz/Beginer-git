@@ -12,18 +12,26 @@
 	startx      khởi động chế độ xwindows từ cửa sổ terminal.
 	clear       xoá trắng cửa sổ dòng lệnh.
 	vi/vim      khởi động trình soạn thảo văn bản.
----Set up RVM
+--Setup RVM
+	$ sudo apt-get install build-essential git-core curl 
+	$ echo '[[ -s "/home/lamdt/.rvm/scripts/rvm" ]] && source "/home/lamdt/.rvm/scripts/rvm"' >> ~/.bashrc
+	$ curl -L https://get.rvm.io | bash -s
+--Setup Ruby
 	$ source /home/user/.rvm/scripts/rvm
 	$ rvm requirements
-	$ rvm list known
+	$ rvm list known 
+	  kiểm tra và chọn bản muốn cài
 	$ rvm install 1.9.3
-	check
+	  kiểm tra xem thành công chưa?
 	$ ruby -v
---Set up Rails
-	$ sudo apt-get install build-essential git-core curl 
-	$ echo '[[ -s "/home/lamdt/.rvm/scripts/rvm" ]] && source 
-	"/home/lamdt/.rvm/scripts/rvm"' >> ~/.bashrc
-	$ curl -L https://get.rvm.io | bash -s
+--Setup Rails
+	$ sudo add-apt-repository ppa:chris-lea/node.js
+	$ sudo apt-get update
+	$ sudo apt-get install nodejs
+	$ gem install rails -v 4.2.1
+	$ rbenv rehash
+		kiểm tra xem thành công chưa?
+	$ rails -v
 --Sublime
 	$ sudo add-apt-repository ppa:webupd8team/sublime-text-3
 	$ sudo apt-get update
@@ -31,8 +39,16 @@
 --Git
     	$ sudo apt-get update
     	$ sudo apt-get install git
-    	$ git config --global user.name "Your Name"
-    	$ git config --global user.email "youremail@domain.com"
+    	$ git config --global color.ui true
+	$ git config --global user.name "YOUR NAME"
+	$ git config --global user.email "YOUR@EMAIL.com"
+	$ ssh-keygen -t rsa -C "YOUR@EMAIL.com"
 --Vim
 	$ sudo apt-get install vim
+--MySql
+	$ apt-get update
+	$ apt-get install mysql-server
+	Gõ y rồi Enter
+	Quá trình cài đặt sẽ diễn ra trong ít phút. Trong quá trình cài đặt MySql sẽ yêu cầu nhập mật khẩu 
+	cho tài khoản mặc định root, đây là mật khẩu để kết nối đến MySql .
 
