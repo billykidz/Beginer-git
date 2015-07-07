@@ -12,6 +12,7 @@
 	startx      khởi động chế độ xwindows từ cửa sổ terminal.
 	clear       xoá trắng cửa sổ dòng lệnh.
 	vi/vim      khởi động trình soạn thảo văn bản.
+ Dưới đây là các bước cài đặt môi trường lập trình, lưu ý phải có mật khẩu root để cài đặt 
 --Setup RVM
 	$ sudo apt-get install build-essential git-core curl 
 	$ echo '[[ -s "/home/lamdt/.rvm/scripts/rvm" ]] && source "/home/lamdt/.rvm/scripts/rvm"' >> ~/.bashrc
