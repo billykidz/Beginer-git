@@ -1,17 +1,17 @@
 ---Các lệnh thông dụng trên Linux
 	rmdir       xóa thư mục rổng
-	rm -rf    	xóa thư mục không rỗng.
+	rm -rf	    xóa thư mục không rỗng.
 	mv          đổi tên/di chuyển thư mục hoặc file từ nơi này sang nơi khác
 	cp          copy file hoặc thư mục
 	mkdir       tạo thư mục
 	cd          Chuyển thư mục
-	ls         	liet ke trong thu muc
+	ls          liet ke trong thu muc
 	exit        thoát khỏi cửa sổ dòng lệnh.
-	logout    	tương tự exit.
+	logout      tương tự exit.
 	reboot/init6/shutdow -r 	khởi động lại hệ thống
 	startx      khởi động chế độ xwindows từ cửa sổ terminal.
 	clear       xoá trắng cửa sổ dòng lệnh.
-	vi/vim    	khởi động trình soạn thảo văn bản.
+	vi/vim      khởi động trình soạn thảo văn bản.
 ---Run RVM
 	$ source /home/user/.rvm/scripts/rvm
 	$ rvm requirements
