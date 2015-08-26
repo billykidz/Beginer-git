@@ -23,19 +23,30 @@ online trực tiếp trên github.com, và tất nhiên là miễn phí, bạn m
     
 ## Cài đặt Git trên Windows rất đơn giản 
 Tải về tập tin cài đặt định dạng exe từ Github, và chạy: http://msysgit.github.com/
-# Lệnh cơ bản # 
+# Lệnh cơ bản 
 ### + Tạo 1 kho git để lưu trữ 
+`
  Di chuyển tới thư mục chứa dư án bạn đang thực hiện, mở terminal on linux hoặc trên win click chuột phải
  chọn "Git bash here"
+ 
   $ git init
+  
   Thêm các file vào kho 
-  $ git add . (Thêm mọi file có trong thư mục)
+  
+  $ git add . 
+  (Thêm mọi file có trong thư mục) 
+  
   hoặc 
+  
   $ git add <tên file>
+`
 ### + Lệnh commit (xác nhận sự thay đổi của dự án)  ###
   $ git commit -m 'tên commit'
 ### + Lưu trữ online ###
   Lệnh khai báo kho lưu trữ online trên gitub, bạn cần tạo 1 tài khoản trên github và tạo 1 kho ( new Repository)
+  
   $ git remote add origin <url kho lưu trữ>
+  
   Lệnh tải 1 dự án có sẵn trên githup
+  
   $ git clone <url>
