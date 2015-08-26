@@ -22,7 +22,7 @@ online trực tiếp trên github.com, và tất nhiên là miễn phí, bạn m
     
 ## Cài đặt Git trên Windows rất đơn giản ## 
 Tải về tập tin cài đặt định dạng exe từ Github, và chạy: http://msysgit.github.com/
-# Lệnh cơ bản
+# Lệnh cơ bản # 
  ### + Tạo 1 kho git để lưu trữ ###
  Di chuyển tới thư mục chứa dư án bạn đang thực hiện, mở terminal on linux hoặc trên win click chuột phải
  chọn "Git bash here"
