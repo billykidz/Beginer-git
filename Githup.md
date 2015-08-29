@@ -75,8 +75,7 @@ Khi bạn có 1 nhóm cùng tham gia một dự án, mỗi người sẽ đảm 
 Sau khi đã hoàn thành xong công việc, chức năng nào đó và bạn muốn tổng hợp chúng vào version hiện tại bạn commit chúng lại
 và checkout về base branch (thường thì sẽ là master)
 ```
- $ git merge tennhanh         # tennhanh là nhánh sẽ được thêm vào, 
-                              có nghĩa bạn thêm tên nhánh vào nhánh đang làm việc
+ $ git merge tennhanh         # tennhanh là nhánh sẽ được merge vào nhánh bạn đang làm việc
 ```
 Đây chỉ là một số lệnh cơ bản cho những bạn mới bắt đầu làm việc với git, hi vọng sẽ giúp được các bạn làm việc dễ dành hơn.
 Xin cảm ơn đã đọc!
