@@ -9,7 +9,7 @@ Git là hệ thống quản lý phiên bản phân tán, nó quản lý các ver
 
  Ở đây mình hướng dẫn các bạn cài và sử dụng git trên windown và linux ,
 
-## Trên môi trường linux, mở terminal và gỡ 
+*Trên môi trường linux* 
 
     Debian như Ubuntu
     $ apt-get update
@@ -17,8 +17,8 @@ Git là hệ thống quản lý phiên bản phân tán, nó quản lý các ver
     Fedora, 
     $ yum install git-core
     
-## Cài đặt Git trên Windows rất đơn giản 
-Tải về tập tin cài đặt định dạng exe từ Github, và chạy: http://msysgit.github.com/
+*Cài đặt Git trên Windows rất đơn giản*
+ Tải về tập tin cài đặt định dạng exe từ Github, và chạy: http://msysgit.github.com/
 # Lệnh cơ bản 
 ### + Tạo 1 kho git để lưu trữ 
 
@@ -62,12 +62,12 @@ Trong trường hợp bạn muốn lưu trữ online phục vụ công việc l�
 ```
 ### + Cùng làm việc
 
-Khi bạn có 1 nhóm cùng tham gia một dự án, mỗi người sẽ đảm nhận việc phát triển các chức năng khác nhau, git cho phép ta quản lý một cách trận tự quá trình phát triển mà không gây rối loạn, với các thức phân chia công việc thành các nhánh khác nhau. Hãy tưởng tượng bạn copy một phiên bản cho mình làm gì đó với nó, anh hàng xóm cũng cũng lấy 1 bản và làm theo cách của anh ta, ở cuối công đoạn 2 bản copy sẽ sẽ được kết hợp lại và đưa vào bản góc (và tất nhiên hai bản copy không được phép xung đột, nghĩa là bạn không được làm những phần người còn lại làm )
+Khi bạn có một nhóm cùng tham gia một dự án, mỗi người sẽ đảm nhận việc phát triển các chức năng khác nhau, git cho phép ta quản lý một cách trận tự quá trình phát triển mà không gây rối loạn, với các thức phân chia công việc thành các nhánh khác nhau. Hãy tưởng tượng bạn copy một phiên bản cho mình làm gì đó với nó, anh hàng xóm cũng cũng lấy một bản và làm theo cách của anh ta, ở cuối công đoạn hai bản copy sẽ sẽ được kết hợp lại và đưa vào bản góc (và tất nhiên hai bản copy không được phép xung đột, nghĩa là bạn không được làm những phần người còn lại làm )
 
 **Phân nhánh**
 ```
  $ git branch                 # Kiểm tra những nhánh đang tồn tại trong kho git
- $ git branch tennhanh        # Tạo 1 nhánh mới để làm việc
+ $ git branch tennhanh        # Tạo nhánh mới để làm việc
  $ git checkout tennhanh      # Bạn đã chuyển qua làm việc trên nhanh này mọi thay đổi chỉ được gi nhận  
                               trên nhánh này, các nhánh khác sẽ ko liên quan
  $ git checkout -b tennhanh   # Tạo và chuyển qua nhánh mới ngay lập tức
