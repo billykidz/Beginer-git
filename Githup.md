@@ -24,56 +24,59 @@ Tải về tập tin cài đặt định dạng exe từ Github, và chạy: htt
 
  Di chuyển tới thư mục chứa dư án bạn đang thực hiện, mở terminal on linux hoặc trên win click chuột phải
  chọn "Git bash here"
- 
-  $ git init     
+``` 
+  $ git init           # bạn đã tạo 1 kho lưu trữ, lưu ý trong 1 thư mục chỉ có 1 kho git
+```
   
-  # bạn đã tạo 1 kho lưu trữ, lưu ý trong 1 thư mục chỉ có 1 kho git
-  
-  **Thêm các file vào kho ** 
-  
-  $ git status   
-  
-  # Kiểm tra những thay đổi trong kho git của bạn
-  
-  $ git add .   
-  
-  # Thêm mọi file có trong thư mục 
-  
+  *Thêm các file vào kho*
+```
+  $ git status         # Kiểm tra những thay đổi trong kho git của bạn 
+  $ git diff           # Để thấy sự thay đổi của từng file
+  $ git add .          # Thêm mọi file có trong thư mục 
+```
   hoặc 
-  
+```
   $ git add tenfile 
-  
-### + Lệnh commit (xác nhận sự thay đổi của dự án)  ###
+```
+### + Lệnh commit (xác nhận sự thay đổi của dự án)
+```
   $ git commit -m 'tencommit'
-### + Lưu trữ online ###
+```
+### + Lưu trữ online
 Trong trường hợp bạn muốn lưu trữ online phục vụ công việc làm nhóm hay chỉ để leader kiểm tra
-
   Lệnh khai báo kho lưu trữ online trên gitub, bạn cần tạo 1 tài khoản trên github và tạo 1 kho ( new Repository)
   [GitHub.com.](http://github.com)
-  
-  $ git remote add origin url
-  
-  => ví dụ: $ git remote add origin https://github.com/vyquocvu/Day2.git    
-  
-  # Điểu chỉ remote tới kho của bạn, bạn chỉ cần làm 1 lần
-  
-  $ git push -u origin master   
-  
-  # Upload kho local của bạn lên remote vừa thiết lập -u để ghi nhớ thông số, origin là tên của remote, và master là tên nhánh bạn đang làm việc. với lần up tiếp theo chỉ đơn giản là  *$ git push *
-  
-  Lệnh tải 1 dự án có sẵn trên githup
-  
-  $ git clone url
-  
-  => ví dụ $ git clone https://github.com/vyquocvu/Day2.git
-
+```
+  $ git remote add origin url         # Điểu chỉ remote tới kho của bạn, bạn chỉ cần làm 1 lần
+                                      => $ git remote add origin https://github.com/vyquocvu/Day2.git    
+  $ git push -u origin master         # Upload kho local của bạn lên remote vừa thiết lập 
+                                      -u để ghi nhớ thông số, 
+                                      origin là tên của remote, 
+                                      master là tên nhánh bạn đang làm việc. 
+ Với lần up tiếp theo chỉ đơn giản là  $ git push 
+```
+ Lệnh tải 1 dự án có sẵn trên githup
+```
+  $ git clone url                    # url là link 1 kho trên github
+                                     => $ git clone https://github.com/vyquocvu/Day2.git
+```
 ### + Cùng làm việc
 
 Khi bạn có 1 nhóm cùng tham gia một dự án, mỗi người sẽ đảm nhận việc phát triển các chức năng khác nhau, git cho phép ta quản lý một cách trận tự quá trình phát triển mà không gây rối loạn, với các thức phân chia công việc thành các nhánh khác nhau. Hãy tưởng tượng bạn copy một phiên bản cho mình làm gì đó với nó, anh hàng xóm cũng cũng lấy 1 bản và làm theo cách của anh ta, ở cuối công đoạn 2 bản copy sẽ sẽ được kết hợp lại và đưa vào bản góc (và tất nhiên hai bản copy không được phép xung đột, nghĩa là bạn không được làm những phần người còn lại làm )
 
-** Phân nhánh **
-
- $ git branch    : kiểm tra những nhánh đang tồn tại trong kho git
- $ git branch tennhanh  :tạo 1 nhánh mới để làm việc
- $ git checkout tennhanh :bạn đã chuyển qua làm việc trên nhanh này mọi thay đổi chỉ được gi nhận trên nhánh này, các nhánh khác sẽ ko liên quan
- $ git checkout -b tennhanh : tạo và chuyển qua nhánh mới ngay lập tức
+**Phân nhánh**
+```
+ $ git branch                 # Kiểm tra những nhánh đang tồn tại trong kho git
+ $ git branch tennhanh        # Tạo 1 nhánh mới để làm việc
+ $ git checkout tennhanh      # Bạn đã chuyển qua làm việc trên nhanh này mọi thay đổi chỉ được gi nhận  
+                              trên nhánh này, các nhánh khác sẽ ko liên quan
+ $ git checkout -b tennhanh   # Tạo và chuyển qua nhánh mới ngay lập tức
+```
+Sau khi đã hoàn thành xong công việc, chức năng nào đó và bạn muốn tổng hợp chúng vào version hiện tại bạn commit chúng lại
+và checkout về base branch (thường thì sẽ là master)
+```
+ $ git merge tennhanh         # tennhanh là nhánh sẽ được thêm vào, 
+                              có nghĩa bạn thêm tên nhánh vào nhánh đang làm việc
+```
+Đây chỉ là một số lệnh cơ bản cho những bạn mới bắt đầu làm việc với git, hi vọng sẽ giúp được các bạn làm việc dễ dành hơn.
+Xin cảm ơn đã đọc!
