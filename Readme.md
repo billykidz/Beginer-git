@@ -51,9 +51,11 @@ Trong trường hợp bạn muốn lưu trữ online phục vụ công việc l�
                                       -u để ghi nhớ thông số, 
                                       origin là tên của remote, 
                                       master là tên nhánh bạn đang làm việc. 
- Với lần up tiếp theo chỉ đơn giản là  $ git push 
+   Với lần up tiếp theo chỉ đơn giản là  $ git push 
+ Note: url của ản là https: thì mỗi lần push bạn phải nhập usename và pass một lần, 
+ để tiện cho làm việc hãy dùng SSH key để xác minh.
 ```
- Lệnh tải 1 dự án có sẵn trên githup
+ Nếu bạn muốn tải một dự án về để làm việc, của ai đó cũng được không cần phải là của bạn
 ```
   $ git clone url                    # url là link 1 kho trên github
                                      => $ git clone https://github.com/vyquocvu/Day2.git
