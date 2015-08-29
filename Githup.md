@@ -33,12 +33,10 @@ Git là hệ thống quản lý phiên bản phân tán, nó quản lý các ver
   $ git status         # Kiểm tra những thay đổi trong kho git của bạn 
   $ git diff           # Để thấy sự thay đổi của từng file
   $ git add .          # Thêm mọi file có trong thư mục 
-```
   hoặc 
+  $ git add tenfile    # Thêm 1 file nào đó
 ```
-  $ git add tenfile 
-```
-### + Lệnh commit (xác nhận sự thay đổi của dự án)
+### + Lệnh commit (xác nhận sự thay đổi của version)
 ```
   $ git commit -m 'tencommit'
 ```
