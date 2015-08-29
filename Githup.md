@@ -76,4 +76,5 @@ và checkout về base branch (thường thì sẽ là master)
  $ git merge tennhanh         # tennhanh là nhánh sẽ được merge vào nhánh bạn đang làm việc
 ```
 Đây chỉ là một số lệnh cơ bản cho những bạn mới bắt đầu làm việc với git, hi vọng sẽ giúp được các bạn làm việc dễ dành hơn.
+
 Xin cảm ơn đã đọc!
